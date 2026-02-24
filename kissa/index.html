@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>KISSA official website</title>
+  <meta name="description" content="自家焙煎したこだわりのコーヒーと、思わず長居したくなるような居心地の良い空間を提供するカフェ「KISSA」のウェブサイトです。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./js/toggle-menu.js"></script>
+  <link href="./css/common.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- headerここから -->
+  <header class="header">
+    <div class="header-inner">
+      <a class="header-logo" href="./index.html">
+        <img src="./images/common/logo-header.png" alt="KISSA">
+      </a>
+      <button class="toggle-menu-button"></button>
+      <div class="header-site-menu">
+        <nav class="site-menu">
+          <ul>
+            <li><a href="./concept.html">CONCEPT</a></li>
+            <li><a href="./menu.html">MENU</a></li>
+            <li><a href="./shop.html">SHOP</a></li>
+            <li><a href="./access.html">ACCESS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- headerここまで -->
+
+  <!-- mainここから -->
+  <main class="main">
+    <div class="first-view">
+      <div class="first-view-text">
+        <h1>Imagination will <br>take you everywhere.</h1>
+        <p>コーヒーを待つ時間も、特別なひとときになる。</p>
+      </div>
+    </div>
+    <div class="lead">
+      <p>「想像力はあなたをどこにでも連れて行ってくれる」<br>注文を待つ間に広げた、一冊の本の中に見つけたことば。<br>ゆったり流れる時間の中で、想像をふくらませる楽しさを思い出す。<br>そんな時間を過ごすとき、おいしいコーヒーがあるとうれしい。</p>
+      <div class="link-button-area">
+        <a class="link-button" href="./concept.html">CONCEPT</a>
+      </div>
+    </div>
+  </main>
+  <!-- mainここまで -->
+
+  <!-- footerここから -->
+  <footer class="footer">
+    <nav class="site-menu">
+      <ul>
+        <li><a href="./concept.html">CONCEPT</a></li>
+        <li><a href="./menu.html">MENU</a></li>
+        <li><a href="./shop.html">SHOP</a></li>
+        <li><a href="./access.html">ACCESS</a></li>
+      </ul>
+    </nav>
+    <a class="footer-logo" href="./index.html">
+      <img src="./images/common/logo-footer.png" alt="KISSA">
+    </a>
+    <p class="footer-tel">TEL 01-2345-6789</p>
+    <p class="footer-time">OPEN Fri-Sun 11:00-16:00</p>
+    <p class="copyright"><small>&copy;Kissa</small></p>
+  </footer>
+  <!-- footerここまで -->
+
+
+  <!-- 将 Firebase 添加到 Web 应用 -->
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBVjucKM-vQo2s_cYqhbslHCoDaKaWAMGA",
+    authDomain: "web-portfolio-sokoyu.firebaseapp.com",
+    projectId: "web-portfolio-sokoyu",
+    storageBucket: "web-portfolio-sokoyu.firebasestorage.app",
+    messagingSenderId: "321196871060",
+    appId: "1:321196871060:web:a3f81f4ee3500b74381381",
+    measurementId: "G-QJ5K30WTGW"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+</body>
+
+</html>
