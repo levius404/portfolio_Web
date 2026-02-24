@@ -6,7 +6,7 @@
 const worksData = [
     {
         id: 1,
-        number: "00",          // 列表左侧编号
+        number: "88",          // 列表左侧编号
         subtitle: "PC", // 列表小标题（可单独修改）
         title: "自作PC・ハードウェア", // 列表大标题（可单独修改）
         images: [
