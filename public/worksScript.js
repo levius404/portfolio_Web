@@ -40,7 +40,7 @@
 
         // 构建图片HTML
         const imagesHtml = work.images
-            .map(src => `<img src="${src}" alt="${work.title}">`)
+            .map(src => `<img src="${encodeURI(src)}" alt="${work.title}">`)
             .join('');
 
         // 构建链接箭头HTML（仅当 linkUrl 存在时显示）
