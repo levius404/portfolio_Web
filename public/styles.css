@@ -221,8 +221,8 @@ body {
     background-color: #1f1f1d;
     /* 下划线的颜色 */
     position: absolute;
-    bottom: 60px;
-    /* 调整与文字的距离 */
+    bottom: 0.2em;
+    /* 调整与文字的距离, 使用em支持自适应字号 */
     left: 0;
 }
 
@@ -818,6 +818,48 @@ body {
     }
 }
 
+/* ==================== Works 小屏适配 ==================== */
+@media only screen and (max-width: 800px) {
+    .works-layout {
+        position: static;
+        flex-direction: column;
+        display: flex;
+        padding-top: 100px;
+        height: auto;
+        bottom: auto;
+    }
+
+    .works-page {
+        overflow-y: auto;
+    }
+
+    .works-detail {
+        flex: none;
+        padding: 20px 20px;
+        overflow-y: visible;
+        order: 1;
+    }
+
+    .works-detail-images {
+        padding-right: 0;
+    }
+
+    .works-detail-text {
+        padding-bottom: 30px;
+    }
+
+    .works-list {
+        flex: none;
+        overflow-y: visible;
+        border-left: none;
+        border-top: 1px solid #d0cfc9;
+    }
+
+    .works-footer {
+        position: static;
+    }
+}
+
 /* 灏忓钩鏉�/澶ф墜鏈� (600px - 800px) */
 @media only screen and (max-width: 800px) {
     .typing-container {
@@ -913,10 +955,6 @@ body {
         font-size: 80px;
     }
 
-    .typing-container::after {
-        bottom: 40px;
-    }
-
     .wenan {
         font-size: 20px;
         top: 700px;
@@ -956,10 +994,6 @@ body {
 @media only screen and (max-width: 500px) {
     .typing-container {
         font-size: 60px;
-    }
-
-    .typing-container::after {
-        bottom: 30px;
     }
 
     .shape {
@@ -1047,10 +1081,6 @@ body {
 
     .typing-container {
         font-size: 50px;
-    }
-
-    .typing-container::after {
-        bottom: 25px;
     }
 
     .shape {
